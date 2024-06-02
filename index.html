@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .parents{
+            height: 100vh;
+            width: 100%;
+            background-color: white;
+            display: flex;
+
+        }
+        .parent{
+            height: auto;
+            width: 82%;
+            background-color:white;
+            margin: auto auto;
+            display: flex;
+        }
+        .box1{
+            background-color: rgb(53, 52, 52);
+            height: auto;
+            width:450px ;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+
+        }
+        .box3{
+            width: 450px;
+            height: 45vh;
+            background-color: yellowgreen;
+            margin: auto;
+        }
+        .box3 img{
+            width: 100%;
+            height: 100%;
+        }
+        .box1 h1{
+            color: white;
+        }
+        .box1 h2{
+            color: skyblue;
+        }
+        .box1 p{
+            color: rgb(229, 227, 227);
+        }
+        .btn{
+            background-color: skyblue;
+            width: 130px;
+            height: 25px;
+            border-radius: 3px;
+            border-bottom: 3px;
+
+        } 
+         .box2{
+            width:740px ;
+            height: 200px;
+            background-color: yellow;
+            display: flex;
+            flex-direction: row;
+            border: 2px solid skyblue;
+
+         }
+          .ioio{
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+
+         }
+         .ioio1{
+            display: flex;
+            flex-direction: column;
+         }
+         .zoo{
+            display: flex;
+            flex-direction: column;
+            width: 370px;
+            height: 200px;
+            background-color: white;
+            gap: 5px;
+            padding-left: 20px;
+            border-bottom: 2px solid skyblue;
+            /* padding: 5px; */
+         }
+        ul li{
+            list-style-type: none;
+        } 
+        .photo{
+            width: 370px;
+            height: 200px;
+            background-color: white;
+            display: flex;
+
+        }
+        .photo img{
+            width: 80%;
+            height: 80%;
+            margin: auto;
+            box-shadow: 1px 1px 12px 2px skyblue;;
+
+        }
+        .zoo h2{
+              font-weight: bold;
+            color: skyblue;
+        }
+        li i{
+            color: skyblue;
+        }
+        .box4{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-left:15px ;
+        }
+        @media (max-width:850px) {
+            .parents{
+                display: flex;
+
+            }
+            
+            .parent{
+                display: block;
+                margin: auto;
+                margin: 20px 20px;
+                
+            }
+            .ghgh{
+                width: 450px;
+            }
+            .box1{
+            width:700px ;
+                margin-left: 15px;
+            }
+            .box3{
+            width: 550px;
+            height: 45vh;
+            margin: auto;
+        }
+        .box3 img{
+            width: 100%;
+            height: 100%;
+        }
+        .slider{
+            margin-top: 650px;
+        }
+      
+        }
+        /* next */
+        .slider{
+            max-height: 60vh;
+            width: 100%;
+            background-color: white;
+
+        }
+        .header h1 span{
+            color: skyblue;
+        }
+        .header{
+            width: 550px;
+            height: 13vh;
+            background-color:white;
+            margin: auto;
+            padding: 10px;
+             gap: 10px;
+             display: flex;
+             flex-direction: column;
+        }
+        .container{
+            height: 300px;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-left: 20px;
+            gap: 20px;
+            overflow: hidden;
+           
+            
+        }
+        /* animation: walk 1s steps(8) infinite, forward 5s linear infinite ;
+           
+        } */
+        @keyframes some {
+            0%{
+                background-position: 0px;
+
+            }
+            100%{
+                background-position: 600px;
+            }
+        }
+        @keyframes some {
+             0%{
+                transform: translateX(-200px);
+             }
+             100%{
+                transform: translateX(200px);
+             }
+        }
+        .container-box{
+            height: 300px;
+            width: 250px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+             animation: some infinite ease-in-out 5s  alternate ;
+            transition: ease-in-out;
+           
+           
+        }
+        .container-img{
+            width: 100%;
+            height: 150px;
+        }
+        .container-img img{
+            width: 100%;
+            height: 100%;
+        }
+        .container-text{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .home-box5{
+            display: flex;
+            gap: 20px;
+        }
+        .home-box6{
+            display: flex;
+            justify-content: space-between;
+        }
+        .home-header{
+            display: flex;
+            justify-content: space-between;
+            height: 50px;
+            /* background-color: rgb(200, 14, 14); */
+
+        }
+        ul {
+            display: flex;
+            gap: 30px;
+        }
+        .logo{
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            font-size: 30px;
+        }
+        .klkl{
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            font-size: 25px;
+            list-style-type:none ;
+        }
+        ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        .ghgh{
+            height: 100vh;
+            width: 1190px;
+            background-image:url(./Mercedes2.jpg) ;
+            margin: auto;
+            color: white;
+        }
+
+      
+     
+        .popo{
+            padding: 0px 30px;
+        }
+        .home-box{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+            background-color: rgb(136, 255, 0);
+            margin: auto;
+        }
+        /* .section{
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+        } */
+       
+
+        
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+     
+
+    <!-- next section-->
+    <div class="parents">
+        <div class="parent">
+        <div class="box1">
+            <h1>Cheak Our</h1> 
+            <h2>Reasearch Studies</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, voluptatibus dolorum error obcaecati praesentium sint molestias, maiores sunt suscipit accusantium voluptate unde ullam vel? Ipsum explicabo illo autem aliquam ab.</p>
+            <button class="btn">More Information</button>
+            <div class="box3"> <img src="./alex1.jpg" alt=""></div>
+        </div>
+
+        <div class="box4">
+        <div class="box2">
+            <div class="zoo">
+                <h2>Gastroenterology</h2>
+                <h1>Radioactive Decay</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quae hic. Dignissimos vero suscipit nulla aliquam maxime officia nobis numquam.</p>
+                <ul class="ioio">
+                   <li>  <i class="fa-solid fa-check ioio1"></i> lorem plus</li>
+                   <li>  <i class="fa-solid fa-check ioio1"></i> lorem plus some</li>
+                   <li>  <i class="fa-solid fa-check ioio1"></i> lorem plus jitesh</li>
+                </ul>
+            </div>
+            <div class="photo"><img src="./alex5.jpg" alt=""></div>
+        </div>
+
+        
+        <div class="box2">
+            <div class="zoo">
+                <h2>Gastroenterology</h2>
+                <h1>Radioactive Decay</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quae hic. Dignissimos vero suscipit nulla aliquam maxime officia nobis numquam.</p>
+                <ul class="ioio">
+                   <li>  <i class="fa-solid fa-check ioio1"></i> lorem plus</li>
+                   <li>  <i class="fa-solid fa-check"></i> lorem plus some</li>
+                   <li>  <i class="fa-solid fa-check"></i> lorem plus jitesh</li>
+                </ul>
+            </div>
+            <div class="photo"><img src="./alex3.jpg" alt=""></div>
+        </div>
+
+        <div class="box2">
+            <div class="zoo">
+                <h2>Gastroenterology</h2>
+                <h1>Radioactive Decay</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quae hic. Dignissimos vero suscipit nulla aliquam maxime officia nobis numquam.</p>
+                <ul class="ioio">
+                   <li>  <i class="fa-solid fa-check "></i> lorem plus</li>
+                   <li>  <i class="fa-solid fa-check"></i> lorem plus some</li>
+                   <li>  <i class="fa-solid fa-check"></i> lorem plus jitesh</li>
+                </ul>
+            </div>
+            <div class="photo"><img src="./alex2.jpg" alt=""></div>
+        </div>
+
+    </div>
+       
+
+
+
+
+
+    </div>
+    </div>
+  
+    
+
+    
+</body>
+</html>
